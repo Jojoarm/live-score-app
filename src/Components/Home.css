@@ -1,0 +1,261 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.home__container {
+  width: 1000px;
+  min-height: 100vh;
+  color: #000000;
+  background-color: White;
+  border: 0.11px dotted white;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 38px;
+}
+
+.games_list {
+  width: 150px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  color: black;
+}
+.my_leagues {
+  display: flex;
+  flex-direction: column;
+}
+.league_title {
+  display: flex;
+  background-color: rgb(232, 233, 232);
+}
+.league_title .fa-star {
+  color: orange;
+  font-size: 14px;
+}
+.league_title p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.league_names {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.leagues-name {
+  display: flex;
+  flex-direction: column;
+}
+.league-name {
+  cursor: pointer;
+}
+.leagues-name:hover {
+  background-color: rgb(4, 121, 33);
+}
+.countries {
+  display: flex;
+}
+.leagues_list {
+  display: none;
+  flex-direction: column;
+  background-color: azure;
+}
+.league-show {
+  display: flex;
+}
+.league-title {
+  padding: 5px 0px 5px 10px;
+  cursor: pointer;
+}
+.league-title:hover {
+  text-decoration: underline;
+  background-color: rgb(247, 247, 247);
+}
+.leagues_list div {
+  font-size: 10px;
+}
+.match-container {
+  display: flex;
+  flex-direction: column;
+}
+.results h4 {
+  background-color: rgb(184, 235, 174);
+}
+.container,
+.results,
+.result-container,
+.match-container {
+  width: 800px;
+  min-height: 100vh;
+}
+.match_details {
+}
+.match,
+.match-end,
+.match-arr {
+  display: flex;
+  width: 800px;
+  height: 30px;
+  border-bottom: 0.1px dashed rgb(185, 184, 184, 0.5);
+  align-items: center;
+  justify-content: space-evenly;
+}
+.match-arr {
+  text-decoration: none;
+  color: black;
+}
+.match-end {
+  background-color: rgba(222, 247, 176, 0.2);
+}
+.league {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  align-content: center;
+  width: 150px;
+  height: 20px;
+  border: 1px solid white;
+}
+.flag {
+  width: 15px;
+  height: 15px;
+}
+.flag img {
+  width: 100%;
+  height: 100%;
+}
+.name {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.time {
+  background-color: rgb(229, 226, 226);
+  color: black;
+  width: 70px;
+  height: 28px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  width: 650px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.score {
+  width: 80px;
+  text-align: center;
+  background-color: rgb(229, 226, 226);
+}
+.scored {
+  color: orange;
+}
+.home_team,
+.away_team {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+}
+.home_team {
+  justify-content: flex-end;
+}
+.away_team {
+  justify-content: flex-start;
+}
+.home_team img,
+.away_team img {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+}
+
+/*=====Single Game page====*/
+.game-container {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.league-details,
+.match-events,
+.game-details {
+  background-color: rgb(235, 235, 235);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.referee,
+.venue {
+  padding-left: 10px;
+}
+.league-info {
+  display: flex;
+}
+.match-summary {
+  display: flex;
+  /* width: 600px; */
+  width: 100%;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.home-info,
+.away-info {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game-score {
+  display: flex;
+  width: 10%;
+}
+.events,
+.match-details {
+  display: flex;
+  flex-direction: column;
+}
+.events-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.home__events,
+.away__events {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 10%;
+}
+.event__type {
+  display: flex;
+  /* flex-direction: column; */
+}
+.event__type p {
+  padding-right: 10px;
+}
+.fa-futbol,
+.fa-square,
+.fa-tshirt {
+  font-size: 12px;
+}
+.fa-tshirt {
+  color: grey;
+}
+.yellow {
+  color: yellow;
+}
+.red {
+  color: red;
+}
