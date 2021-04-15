@@ -1,7 +1,8 @@
 import React from 'react'
-import Games from './Games'
+import Countries from './Countries'
+// import Games from './Games'
 import './Home.css'
-import Results from './Results'
+// import Results from './Results'
 
 function Home() {
     return (
@@ -14,19 +15,19 @@ function Home() {
                             <div className='country_list'>Countries</div>
                         </div>
                         <div className="league_names">
-                           
+                           <Countries />
                         </div>
                     </div>
                 </div>
 
                 <div className="match-container">
                     <div className="container">
-                        <Games />
+                        {/* <Games /> */}
                     </div>
                     <div className="results">
                         <h4>Results</h4>
                         <div className="result-container">
-                            <Results />
+                            {/* <Results /> */}
                         </div>
                     </div>
 
