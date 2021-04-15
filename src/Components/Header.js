@@ -1,17 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
     return (
         <div className="header">
             <div className="header__container">
-                <div className="my_logo">
-                    <i className="fab fa-drupal"></i>
-                    <div className="title">
-                        <h4>JoJoScore.com</h4>
-                        <p>FIRST TO DELIVER YOUR SCORES</p>
+                <Link className="header__container" to='/'>
+                    <div className="my_logo">
+                        <i className="fab fa-drupal"></i>
+                        <div className="title">
+                            <h4>JoJoScore.com</h4>
+                            <p>FIRST TO DELIVER YOUR SCORES</p>
+                        </div>
                     </div>
-                </div>
+                </Link>
                 
                 <div className="buttons">
                     <div className="mode"><i className="fas fa-moon"></i><i className="active fas fa-sun"></i></div>

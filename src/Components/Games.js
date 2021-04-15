@@ -87,7 +87,7 @@
 //                 game.fixture.status.short != 'CANC')
 //             ?.map(game => (
 //                 <div className="match" key={game.fixture.id}>
-//                     <Link className="match-arr" to={`/${game.fixture.id}`}> 
+//                     <Link className="match-arr" to={`/game/${game.fixture.id}`}> 
 //                         <div className="league">
 //                             <div className="flag"><img src={game.league.logo} alt="country flag"/></div>
 //                             <div className="name">{game.league.country}</div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {Link} from 'react-router-dom'
 
 
 const LeagueList = ({country, leagues}) => {
@@ -18,7 +19,9 @@ const LeagueList = ({country, leagues}) => {
             {leagues?.filter(league => league.country.code === country.code)
                 ?.map(league => (
                 <div className={`league_name ${showLeague ? "league_show" : ""}`} key={league.league.id}>
-                    {league.league.name}
+                    <Link to={`/league/${league.league.id}`} style={{ textDecoration: 'none', color: 'black'}}>
+                        {league.league.name}
+                    </Link>
                 </div>
                     ))}
                 </div>

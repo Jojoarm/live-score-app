@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import GameInfo from './Components/GameInfo';
+import LeagueInfo from './Components/LeagueInfo';
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       </div>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/:id" component={GameInfo}/>
+        <Route path="/game/:id" component={GameInfo}/>
+        <Route path="/league/:id" exact component={LeagueInfo}/>d
       </Switch>
     </Router>
     

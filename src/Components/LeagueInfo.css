@@ -1,0 +1,61 @@
+.standing__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.league__info {
+  display: flex;
+  align-items: center;
+}
+.country__logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.table__container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80%;
+  font-size: 13px;
+}
+
+.table,
+.table_standing {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.table_standing {
+  border-bottom: 0.1px dashed rgb(185, 184, 184, 0.5);
+}
+.table {
+  background-color: black;
+  color: #fff;
+}
+
+.position,
+.games__played,
+.points,
+.wins,
+.losses,
+.draws,
+.goals_for,
+.goals_against,
+.goal_difference {
+  width: 5%;
+  text-align: center;
+}
+
+.team {
+  width: 35%;
+}
+.form {
+  width: 10%;
+}
