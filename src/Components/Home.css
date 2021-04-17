@@ -1,30 +1,31 @@
 .home {
   width: 100%;
   min-height: 100vh;
-  background-color: grey;
+  background-color: rgb(170, 165, 165);
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 14px;
 }
 
 .home__container {
-  width: 1000px;
+  width: 95%;
   min-height: 100vh;
   color: #000000;
   background-color: White;
   border: 0.11px dotted white;
   display: flex;
   justify-content: space-around;
-  margin-left: 38px;
 }
 
 .games_list {
-  width: 150px;
+  width: 13%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: lightgray;
   color: black;
+  overflow-y: scroll;
 }
 .my_leagues {
   display: flex;
@@ -72,6 +73,11 @@
   padding: 5px 0px 5px 10px;
   cursor: pointer;
 }
+.country_list {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+}
 .league-title:hover {
   text-decoration: underline;
   background-color: rgb(247, 247, 247);
@@ -82,24 +88,29 @@
 .match-container {
   display: flex;
   flex-direction: column;
+  width: 85%;
 }
 .results h4 {
   background-color: rgb(184, 235, 174);
 }
-.container,
+/* .container,
 .results,
 .result-container,
 .match-container {
-  width: 800px;
+  width: 95%;
   min-height: 100vh;
+} */
+
+.container,
+.results {
+  padding-left: 10px;
 }
-.match_details {
-}
+
 .match,
 .match-end,
 .match-arr {
   display: flex;
-  width: 800px;
+  width: 95%;
   height: 30px;
   border-bottom: 0.1px dashed rgb(185, 184, 184, 0.5);
   align-items: center;
@@ -117,7 +128,7 @@
   /* justify-content: space-between; */
   align-items: center;
   align-content: center;
-  width: 150px;
+  width: 15%;
   height: 20px;
   border: 1px solid white;
 }
@@ -128,15 +139,21 @@
 .flag img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 .name {
   text-transform: uppercase;
-  font-size: 12px;
+  width: 80%;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .time {
   background-color: rgb(229, 226, 226);
   color: black;
-  width: 70px;
+  width: 8%;
+  font-size: 7px;
   height: 28px;
   text-align: center;
   display: flex;
@@ -144,14 +161,14 @@
   align-items: center;
 }
 .game {
-  width: 650px;
+  width: 77%;
   height: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .score {
-  width: 80px;
+  width: 20%;
   text-align: center;
   background-color: rgb(229, 226, 226);
 }
@@ -161,8 +178,16 @@
 .home_team,
 .away_team {
   display: flex;
-  width: 300px;
+  width: 40%;
   flex-wrap: wrap;
+}
+.home_team p,
+.away_team p {
+  width: 70%;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .home_team {
   justify-content: flex-end;
@@ -216,6 +241,12 @@
   justify-content: center;
   align-items: center;
 }
+.home-info img,
+.away-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
 .game-score {
   display: flex;
   width: 10%;
@@ -235,7 +266,7 @@
 .away__events {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   padding-left: 10%;
 }
 .event__type {
@@ -243,7 +274,8 @@
   /* flex-direction: column; */
 }
 .event__type p {
-  padding-right: 10px;
+  font-size: 10px;
+  padding-right: 8px;
 }
 .fa-futbol,
 .fa-square,
@@ -287,3 +319,30 @@
 .league_name:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 650px) {
+  .home {
+    font-size: 12px;
+  }
+
+  .flag {
+    width: 10px;
+    height: 10px;
+  }
+  .name {
+    font-size: 8px;
+  }
+  .home_team img,
+  .away_team img {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+}
+
+/* .spinner {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

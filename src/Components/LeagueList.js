@@ -3,15 +3,11 @@ import {Link} from 'react-router-dom'
 
 
 const LeagueList = ({country, leagues}) => {
- 
-
     const [showLeague, setShowLeague] = useState(false)
 
     function showLeagues() {
         setShowLeague(!showLeague)
     }
-
-
     
     return (
         <div className="country_name" onClick={showLeagues}>
