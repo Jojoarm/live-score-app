@@ -1,3 +1,4 @@
+import { CircularProgress } from '@material-ui/core';
 import React, {useState, useEffect} from 'react';
 
 function GameInfo( {match} ) {
@@ -57,6 +58,14 @@ function GameInfo( {match} ) {
         return eventDisplay
     }
 
+    // console.log(matches)
+    //If the product has not beeng fetch a circular loading should be shown
+    if (matches.length === 0) return(
+        <div className="spinner">
+            <CircularProgress />
+        </div>
+    ) 
+
     return (
         <div className="game-container">
             <div className="league-details">
@@ -115,8 +124,8 @@ function GameInfo( {match} ) {
             </div>
             <div className="match-details">
                 <div className="game-details">Details</div>
-                <div className="referee"><small>Referee:</small> {matches?.fixture?.referee} </div>
-                <div className="venue"><small>Stadium:</small> {matches?.fixture?.venue?.name} - {matches?.fixture?.venue?.name}</div>
+                <div className="referee"><small>Referee:</small> <p>{matches?.fixture?.referee}</p> </div>
+                <div className="venue"><small>Stadium:</small> <p>{matches?.fixture?.venue?.name} - {matches?.fixture?.venue?.name}</p></div>
             </div>
         </div>
     )

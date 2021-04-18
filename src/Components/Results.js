@@ -94,7 +94,7 @@ function Results() {
                         <div className='time'>{getTime(game)}</div>
                         <div className="game">
                         <div className="home_team"><p>{game.teams.home.name}</p><img src={game.teams.home.logo} alt="home logo" /></div>
-                            <div className="score"><span className="home_score">{game.goals.home==null ? '' : game.goals.home}</span>-<span className='away_score'>{game.goals.away==null ? '' : game.goals.away}</span></div>
+                            <div className={`score ${game.goals.home>0 || game.goals.away>0 ? 'scored': ''}`}><span className="home_score">{game.goals.home==null ? '' : game.goals.home}</span>-<span className='away_score'>{game.goals.away==null ? '' : game.goals.away}</span></div>
                             <div className="away_team"><img src={game.teams.away.logo} alt="away logo" /><p>{game.teams.away.name}</p></div>
                         </div>
                     </Link>

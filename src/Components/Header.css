@@ -105,7 +105,7 @@
     padding-right: 5px;
   }
   .title h4 {
-    font-size: 15px;
+    font-size: 12px;
   }
   .buttons {
     width: 180px;
@@ -120,14 +120,17 @@
     padding-left: 50px;
   }
   .football {
-    width: 150px;
+    width: 100px;
     height: 20px;
   }
   .football h4 {
-    font-size: 12px;
+    font-size: 10px;
   }
   .fa-futbol {
     font-size: 18px;
     padding: 0 5px;
+  }
+  .fa-search {
+    font-size: 10px;
   }
 }

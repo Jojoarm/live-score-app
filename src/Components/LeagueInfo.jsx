@@ -1,3 +1,4 @@
+import { CircularProgress } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 import './LeagueInfo.css'
 
@@ -26,6 +27,12 @@ const LeagueInfo = ({ match }) => {
         fetchTable()
     }, [])
 
+    if (table.length === 0) return(
+        <div className="spinner">
+            <CircularProgress />
+        </div>
+    ) 
+
     return (
         <div className="leageinfo__container">
             <div className="standing__container">
@@ -33,7 +40,7 @@ const LeagueInfo = ({ match }) => {
                     <img className="country__logo" src={table[0]?.league?.flag} />
                     <h4>{table[0]?.league?.country}-</h4>
                     {" "}
-                    <h6>{table[0]?.league?.name}:</h6>
+                    <h4>{table[0]?.league?.name}:</h4>
                     {" "}
                     <p>{table[0]?.league?.season}</p>
                 </div>

@@ -11,7 +11,7 @@ const LeagueList = ({country, leagues}) => {
     
     return (
         <div className="country_name" onClick={showLeagues}>
-            {country.name}
+            <p>{country.name}</p>
             {leagues?.filter(league => league.country.code === country.code)
                 ?.map(league => (
                 <div className={`league_name ${showLeague ? "league_show" : ""}`} key={league.league.id}>
@@ -19,8 +19,8 @@ const LeagueList = ({country, leagues}) => {
                         {league.league.name}
                     </Link>
                 </div>
-                    ))}
-                </div>
+            ))}
+        </div>
     )
 }
 
